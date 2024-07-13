@@ -1,5 +1,10 @@
 """
-You are tasked with developing a system to manage a school's enrollment. The system should allow for adding students to a course, calculating the average grade of the students, and determining the total number of students enrolled. You will need multiple classes in order to accomplish this and one will utilize the other when being invoked. See example:
+You are tasked with developing a system to manage a school's enrollment.
+The system should allow for adding students to a course,
+  calculating the average grade of the students,
+  and determining the total number of students enrolled.
+You will need multiple classes in order to accomplish this and one will utilize the other when being invoked.
+See example:
 
 course = Course("Math 101")
 course.add_student(Student("Alice", 85))
@@ -8,10 +13,12 @@ course.add_student(Student("Bob", 92))
 print(course.get_average_grade())  # Prints 88.5
 print(course.get_total_students())  # Prints 2
 
+
 Once your classes are complete, copy and paste the above example below them in order to test their functionality.
 """
 
 """
+Write a class that meets these requirements.
 
 Name:       Course
 

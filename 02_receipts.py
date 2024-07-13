@@ -1,5 +1,9 @@
 """
-You are tasked with developing a system to manage shopping receipts. The system should allow for adding items to a receipt, calculating subtotals, and applying tax rates to get the total amount due. You will need multiple classes in order to accomplish this and one will utilize the other when being invoked. See example:
+You are tasked with developing a system to manage shopping receipts.
+The system should allow for adding items to a receipt, calculating subtotals,
+and applying tax rates to get the total amount due.
+You will need multiple classes in order to accomplish this and one will utilize the other when being invoked.
+See example:
 
 receipt = Receipt(.1)
 receipt.add_item(ReceiptItem(4, 2.50))
@@ -9,12 +13,12 @@ print(receipt.get_subtotal())     # Prints 20
 print(receipt.get_total())        # Prints 22
 
 
-Once your classes are complete. Copy and paste the above example below them in order to test their functionality
+Once your classes are complete, copy and paste the above example below them in order to test their functionality
+"""
 
 
 """
-
-"""
+Write a class that meets these requirements.
 
 Name:       Receipt
 

@@ -1,5 +1,9 @@
 """
-You are tasked with developing a system to manage different types of media in a library. The library contains various types of items such as books, magazines, and DVDs. Each type of media shares some common attributes but also has specific attributes and behaviors unique to its type. You will need multiple classes to accomplish this, with some classes inheriting from a parent class. See example:
+You are tasked with developing a system to manage different types of media in a library.
+The library contains various types of items such as books, magazines, and DVDs.
+Each type of media shares some common attributes but also has specific attributes and behaviors unique to its type.
+You will need multiple classes to accomplish this, with some classes inheriting from a parent class.
+See example:
 
 book = Book("The Great Gatsby", "1925", "B001", "F. Scott Fitzgerald", 218)
 magazine = Magazine("National Geographic", "2021", "M001", 12, "December")
@@ -9,10 +13,13 @@ print(book.get_info())         # Prints book information
 print(magazine.get_info())     # Prints magazine information
 print(dvd.get_info())          # Prints DVD information
 
+
 Once your classes are complete, copy and paste the above example below them in order to test their functionality.
 """
 
 """
+Write a class that meets these requirements.
+
 Name:       LibraryItem
 
 Required state:

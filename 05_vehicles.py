@@ -1,5 +1,11 @@
 """
-You are tasked with developing a system to manage different types of vehicles. The system should include various types of vehicles such as cars, trucks, and motorcycles. Each type of vehicle shares some common attributes but also has specific attributes and behaviors unique to its type. You will need multiple classes to accomplish this, with some classes inheriting from a parent class. See example:
+You are tasked with developing a system to manage different types of vehicles.
+The system should include various types of vehicles such as cars, trucks, and motorcycles.
+Each type of vehicle shares some common attributes but also has specific attributes
+  and behaviors unique to its type.
+You will need multiple classes to accomplish this,
+  with some classes inheriting from a parent class.
+See example:
 
 car = Car("Toyota", "Corolla", 2020, 4)
 truck = Truck("Ford", "F-150", 2018, 10000)
@@ -9,10 +15,13 @@ print(car.get_info())         # Prints car information
 print(truck.get_info())       # Prints truck information
 print(motorcycle.get_info())  # Prints motorcycle information
 
+
 Once your classes are complete, copy and paste the above example below them in order to test their functionality.
 """
 
 """
+Write a class that meets these requirements.
+
 Name:       Vehicle
 
 Required state:
