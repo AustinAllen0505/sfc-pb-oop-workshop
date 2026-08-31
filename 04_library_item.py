@@ -16,7 +16,56 @@ print(dvd.get_info())          # Prints DVD information
 
 Once your classes are complete, copy and paste the above example below them in order to test their functionality.
 """
+class LibraryItem:
+    def __init__(self, title, publication_date, identifier):
+        self.title = title
+        self.publication_date = publication_date
+        self.identifier = identifier
 
+    def get_info(self):
+        return f"Title: {self.title}, Publication Date: {self.publication_date}, ID: {self.identifier}"
+
+
+class Book(LibraryItem):
+    def __init__(self, title, publication_date, identifier, author, pages):
+        super().__init__(title, publication_date, identifier)
+        self.author = author
+        self.pages = pages
+
+    def get_info(self):
+        base_info = super().get_info()
+        return f"{base_info}, Author: {self.author}, Pages: {self.pages}"
+
+
+class Magazine(LibraryItem):
+    def __init__(self, title, publication_date, identifier, issue_number, month):
+        super().__init__(title, publication_date, identifier)
+        self.issue_number = issue_number
+        self.month = month
+
+    def get_info(self):
+        base_info = super().get_info()
+        return f"{base_info}, Issue Number: {self.issue_number}, Month: {self.month}"
+
+
+class DVD(LibraryItem):
+    def __init__(self, title, publication_date, identifier, duration, director):
+        super().__init__(title, publication_date, identifier)
+        self.duration = duration
+        self.director = director
+
+    def get_info(self):
+        base_info = super().get_info()
+        return f"{base_info}, Duration: {self.duration} min, Director: {self.director}"
+
+
+book = Book("The Great Gatsby", "1925", "B001", "F. Scott Fitzgerald", 218)
+magazine = Magazine("National Geographic", "2021", "M001", 12, "December")
+dvd = DVD("Inception", "2010", "D001", 148, "Christopher Nolan")
+
+print(book.get_info())         # Prints book information
+print(magazine.get_info())     # Prints magazine information
+print(dvd.get_info())          # Prints DVD information
 """
 Write a class that meets these requirements.
 

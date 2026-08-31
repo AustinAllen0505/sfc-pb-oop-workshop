@@ -25,7 +25,37 @@ print(account.check_balance())  # Prints 20
 Once your classes are complete, copy and paste the above example below them in order to test their functionality
 """
 
+class BankAccount:
 
+    def __init__(self, balance):
+        self.balance = balance
+
+    def check_balance(self):
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance = self.balance - amount
+        else:
+            print("Insufficient funds")
+
+
+account = BankAccount(100)
+
+account.deposit(50)
+print(account.check_balance())  # 150
+
+account.withdraw(30)
+print(account.check_balance())  # 120
+
+account.withdraw(100)
+print(account.check_balance())  # 20
+
+account.withdraw(50)            # Insufficient funds
+print(account.check_balance())  # 20
 
 """
 Write a class that meets these requirements.

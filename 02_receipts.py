@@ -15,7 +15,46 @@ print(receipt.get_total())        # Prints 22
 
 Once your classes are complete, copy and paste the above example below them in order to test their functionality
 """
+class ReceiptItem:
 
+    def __init__(self, quantity, price):
+        self.quantity = quantity
+        self.price = price
+
+    def get_total(self):
+        return self.quantity * self.price
+
+
+class Receipt:
+
+    def __init__(self, tax_rate):
+        self.tax_rate = tax_rate
+        self.items = []
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def get_subtotal(self):
+        subtotal = 0
+
+        for item in self.items:
+            subtotal = subtotal + item.get_total()
+
+        return subtotal
+
+    def get_total(self):
+        return self.get_subtotal() * (1 + self.tax_rate)
+
+
+# Test the classes
+
+receipt = Receipt(.1)
+
+receipt.add_item(ReceiptItem(4, 2.50))
+receipt.add_item(ReceiptItem(2, 5.00))
+
+print("Total:", receipt.get_subtotal())
+print("After tax:", receipt.get_total())
 
 """
 Write a class that meets these requirements.
